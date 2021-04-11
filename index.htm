@@ -38,11 +38,24 @@
     <br><br>
 
     <h2>Music</h2>
-    <div id="spotify-np">n/a - I'm probably using YouTube or Plex right now.</div>
-    <small>via <a
-            href="https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-the-users-currently-playing-track"
-            target="_blank">Spotify Web API</a>.</small>
-    <br><br>
+    <div style="display:flex;">
+        <div id="spotify-art" style="display:none;">
+            <img src="" style="width:90px; height: auto;">
+        </div>
+
+        <div style="margin-left:.5em;display: flex; flex-direction: column;">
+            <div id="spotify-np" style="flex:2;">n/a</div>
+
+            <small style="display: inline-block;">
+                <i>
+                    <span id="spotify-age">n/a</span> via
+                    <a href="https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-the-users-currently-playing-track"
+                        target="_blank">Spotify Web API</a>.
+                </i>
+            </small>
+        </div>
+    </div>
+    <br>
 
     <h2>Credit</h2>
     This site is based on <a href="https://distrotube.com" target="_blank">distrotube.com</a> by <a
